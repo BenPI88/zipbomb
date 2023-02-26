@@ -19,4 +19,6 @@ while True:
   while not i == 49:
     i += 1
     os.system("cd zbomb && cp zbomb1.tar.gz zbomb" + str(i) + ".tar.gz")
+  os.system("rm -rf zbomb1.tar.gz")
   os.system("tar -zcvf zbomb1.tar.gz zbomb")
+  os.system("rm -rf zbomb")
