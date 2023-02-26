@@ -11,9 +11,10 @@ while not i == 10000:
   print(str(i) + "/10000")
 os.system("echo " + rndstr + " > rndstr.txt")
 os.system("clear")
-os.system('sudo tar -zcvf zbomb1.tar.gz rndstr.txt')
+os.system('tar -zcvf zbomb1.tar.gz rndstr.txt')
 while True:
-  os.system('mkdir zbomb && cp zbomb1.tar.gz')
+  os.system('mkdir zbomb')
+  os.system('cp zbomb1.tar.gz zbomb/zbomb1.tar.gz')
   i = 1
   while not i == 49:
     i += 1
